@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "paypal.test.com.test_paypal_sdk",
+    "sha256_cert_fingerprints":
+    ["D2:3F:BF:B2:B7:42:BC:52:AB:58:80:85:2B:E3:CA:B6:96:4A:96:B8:0E:69:63:80:D5:04:BD:64:43:42:B4:45"]
+  }
+}]
