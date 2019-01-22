@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <h1>Full page redirect</h1>
+   		
+    	<div>
+    			<button id="paynow">Pay with PayPal</button>
+
+    	</div>
+
+    	<script>
+    		$( document ).ready(function() {
+				 console.log( "ready!" );
+
+				 $("#paynow").on('click', function(){
+				 	console.log("paynow")
+
+				 	$.get('/create-payment', function(resp){
+				 		
+				 		if(resp.state == 'created') {
+				 			for(var i in resp.links){
+				 				if(resp.links[i].method == 'REDIRECT') {
+				 					console.log(resp.links[i].href)
+				 					window.location = resp.links[i].href;
+				 					break;
+				 				}
+				 			}
+				 		}
+				 	})
+				 })
+			});
+    	</script>
+  </body>
+</html>
