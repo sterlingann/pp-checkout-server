@@ -101,7 +101,7 @@ var PAYLOAD = {
   }
 };
 
-router.get('/execute-payments', function(res,req, next) {
+router.get('/execute-payments', function(req,res,next) {
 	console.log(req.body);
 	console.log(req.query);
 	res.send({status:true});
