@@ -96,10 +96,16 @@ var PAYLOAD = {
   ],
   "note_to_payer": "Contact us for any questions on your order.",
   "redirect_urls": {
-    "return_url": "https://example.com/return",
+    "return_url": "https://shopping-paypal.herokuapp.com/execute-payments",
     "cancel_url": "https://example.com/cancel"
   }
 };
+
+router.get('/execute-payments', function(res,req, next) {
+	console.log(req.body);
+	console.log(req.query);
+	res.send({status:true});
+})
 
 router.get('/create-payment', function(req,res,next) {
 
