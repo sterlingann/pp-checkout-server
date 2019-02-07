@@ -20,15 +20,14 @@ router.get('/thankyou', function(req, res, next) {
 
 
 var CONFIG =  {
-		"CLIENT_ID" :"Aex8II3lB3doTVQ01zNkGJ95HFjlobuYPseiFOhShjiJ6sGnZjvfgxicx0quXPbhDkmcJ4kGOeGEuh1p",
-		"SECRET":"EMy4SJsZvF8LsSXCpQBksjAhyCdpse5BXRG7X1jKRCGHj9YbWQ6nmhqb_zSWYXkw4t_uOUGHof_cBO03",
+		"CLIENT_ID" :"ATDtSDCij93X_nKgEO_L9L7lpnjGLxl7W3PBqggsHIj1GUcP39eDuEFH6oguUmiesK3EukWadZtkVNWP",
+		"SECRET":"ECeLYuRNOmNndr8GPNd10G8W5afcImSmKgoJgRg7i05IGi1B9gPYM0uxfwDXLmERLpqfKFosRP6AWVeZ",
 		"ACCESS_TOKEN_URL":"https://api.sandbox.paypal.com/v1/oauth2/token",
 		"CREATE_PAYMENT_URL":"https://api.sandbox.paypal.com/v1/payments/payment",
 		"EXECUTE_PAYMENT_URL":"https://api.sandbox.paypal.com/v1/payments/payment/{payment_id}/execute/",
 		"GET_PAYMENT_DETAILS":"https://api.sandbox.paypal.com/v1/payments/payment/{payment_id}",
-		"CANCEL_URL":"https://node-paypal-express-sever.herokuapp.com/cancel-url",
-		"RETURN_URL":"https://node-paypal-express-sever.herokuapp.com/execute-payments",
-		//"RETURN_URL":"com.example.paypalcustomtabdemo://onetouch/v1/success",
+		"CANCEL_URL":"https://nativexo-cart.herokuapp.com/thankyou",
+		"RETURN_URL":"https://nativexo-cart.herokuapp.com/thankyou",
 		"BN_CODE":"PP-DemoPortal-EC-JSV4-python-REST"
 	};
 
