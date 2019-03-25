@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.paypal.dereanderson.syrnativeandroid",
+    "sha256_cert_fingerprints":
+    ["53:DB:79:42:3B:6A:BC:98:93:48:D3:1A:B6:ED:2F:27:8B:9A:E4:BD:5B:18:3D:96:BD:1B:53:8B:C5:88:52:6A"]
+  }
+}]
